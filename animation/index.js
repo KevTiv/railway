@@ -21,7 +21,7 @@ export const navAnimation = (showNav, navElem)=>{
 //animation of featured project arrows and intro arrows
 export const arrowAnimation = (isMouseOver, section)=>{
     gsap.registerPlugin(CSSRulePlugin);
-    let arrowAfterElem,arrowBeforeElem;
+    let arrowAfterElem,arrowBeforeElem,arrowContainer;
 
     if(section === 'intro'){
         arrowAfterElem = CSSRulePlugin.getRule(".Home_intro_arrows__g3KCF::after");
@@ -41,16 +41,16 @@ export const arrowAnimation = (isMouseOver, section)=>{
     };
 
     const arrowsMoveRight = ()=>{
-        gsap.to([arrowBeforeElem, arrowAfterElem],{
-            left: '+=100%',
-            duration: 0.4,
+        gsap.to([arrowAfterElem, arrowBeforeElem],{
+            left: '+=110',
+            duration: 0.25,
             ease: 'linear'
         })
     };
     const arrowsMoveLeft=()=>{
         gsap.to([arrowBeforeElem, arrowAfterElem],{
-            left: '-=100%',
-            duration: 0.4,
+            left: '-=110',
+            duration: 0.25,
             ease: 'linear'
         });
     };
@@ -85,7 +85,6 @@ export const navArrowAnimation =(isMouseOver, navStartupsElemRef, navElemRef)=>{
 };
 //Zoom in and out of featured project img 
 export const zoomFeaturedProject =(isMouseOver, elem)=>{
-    console.log('here');
     isMouseOver ?
         gsap.to(elem.current.querySelector('span img'),{
             scale: 1.05,

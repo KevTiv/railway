@@ -2,7 +2,6 @@ import React from 'react'
 import { useThemeContext } from '../context'
 const Header = () => {
     const isDarkMode = useThemeContext();
-    console.log(isDarkMode);
   return (
       <>
         <section id="header">
