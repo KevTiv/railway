@@ -1,0 +1,14 @@
+<svg class="logo item-1 photo-and-logo-column" width="300px" height="78px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 78" version="1.1" aria-label="Oi logo">
+  <defs>
+    <linearGradient x1="130.334473%" y1="125.408779%" x2="-23.3006073%" y2="28.861183%" id="evfldkropy-linearGradient-1">
+      <stop stop-color="#DD88EF" offset="0%"></stop>
+      <stop stop-color="#FF456D" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="evfldkropy-Oi-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M41.1244017,78 C63.8367817,78 78,59.5617548 78,36.8170266 C78,14.0722985 70.7201369,0 48.007757,0 C25.2953771,0 0,14.0722985 0,36.8170266 C0,59.5617548 18.4120218,78 41.1244017,78 Z" id="evfldkropy-Oval" fill="url(#evfldkropy-linearGradient-1)"></path>
+    <path d="M30.5,26 C37.4035594,26 43,31.5964406 43,38.5 C43,45.4035594 37.4035594,51 30.5,51 C23.5964406,51 18,45.4035594 18,38.5 C18,31.5964406 23.5964406,26 30.5,26 Z M30.5,31.3571429 C26.5551089,31.3571429 23.3571429,34.5551089 23.3571429,38.5 C23.3571429,42.4448911 26.5551089,45.6428571 30.5,45.6428571 C34.4448911,45.6428571 37.6428571,42.4448911 37.6428571,38.5 C37.6428571,34.5551089 34.4448911,31.3571429 30.5,31.3571429 Z" id="evfldkropy-Combined-Shape" fill="#FFFFFF"></path>
+    <rect id="evfldkropy-Rectangle" fill="#FFFFFF" x="48" y="32" width="5" height="20" rx="2.5"></rect>
+    <circle id="evfldkropy-Oval" fill="#FFFFFF" cx="50.5" cy="23.5" r="4.5"></circle>
+  </g>
+</svg>

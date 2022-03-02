@@ -1,0 +1,38 @@
+@use './mixins/arrows' as *;
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+.selected{
+  font-weight: bold;
+}
+.intro_arrows {
+  @include arrows_pseudo_elem;
+}
+.featured_share_arrows {
+  @include arrows_pseudo_elem;
+}
+.featured_spoton_arrows {
+  @include arrows_pseudo_elem;
+}
+.featured_orbit_arrows {
+  @include arrows_pseudo_elem;
+}
+
+.nav_startups_arrow,
+.nav_ideology_arrow,
+.nav_method_arrow,
+.nav_join_us_arrow {
+  @include nav_arrow_pseudo_elem;
+}
+
+.horinzontal_scroll{
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+}
