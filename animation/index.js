@@ -58,30 +58,31 @@ export const arrowAnimation = (isMouseOver, section)=>{
 };
 
 // animation of nav elem
-export const navArrowAnimation =(isMouseOver, navStartupsElemRef, navElemRef)=>{
+export const navArrowAnimation =(isMouseOver, isMobileScreen, navStartupsElemRef, navElemRef)=>{
     const tl = gsap.timeline({
         defaults:{
             duration: 0.6,
             ease: 'power2.out'
         }
     });
-
-    isMouseOver ?
-        tl
-            .to(navStartupsElemRef.current,{
-                width: 0,
-            })
-            .to(navElemRef.current,{
-                width: '16.666667%',
-            },'-=0.6')
-        :
-        tl
-            .to(navElemRef.current,{
-                width: 0,
-            })
-            .to(navStartupsElemRef.current,{
-                width: '16.666667%',
-            },'-=0.6')
+    if(!isMobileScreen){
+        isMouseOver?
+            tl
+                .to(navStartupsElemRef.current,{
+                    width: 0,
+                })
+                .to(navElemRef.current,{
+                    width: '16.666667%',
+                },'-=0.6')
+            :
+            tl
+                .to(navElemRef.current,{
+                    width: 0,
+                })
+                .to(navStartupsElemRef.current,{
+                    width: '16.666667%',
+                },'-=0.6')
+    }
 };
 //Zoom in and out of featured project img 
 export const zoomFeaturedProject =(isMouseOver, elem)=>{

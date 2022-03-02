@@ -2,9 +2,10 @@ import React from 'react'
 import styles from '../styles/Home.module.scss'
 
 import { arrowAnimation } from '../animation'
+import {useScreenSizeContext} from '../context'
 
 const Intro = () => {
-
+    let isMobileScreen = useScreenSizeContext();
   return (
     <>
         <section id="intro">

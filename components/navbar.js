@@ -23,7 +23,7 @@ const Navbar = () => {
                 previousScrollPosition = scrollTop;
             }
         }
-
+        console.log(isMobileScreen);
         handleNavAnimation();
         window.addEventListener('scroll',handleNavAnimation);
 
@@ -47,15 +47,15 @@ const Navbar = () => {
                         <span ref={startUpsElemArrowRef} className={`relative inline-block my-auto w-1/6 h-1/2 before:bg-blue-600 dark:before:bg-orange-600 ${styles.nav_startups_arrow}`}></span>
                         <span className={`w-3/4 ${styles.selected}`}>Startups</span>
                     </li>
-                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, startUpsElemArrowRef, ideologyElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, startUpsElemArrowRef, ideologyElemArrowRef)}>
+                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, isMobileScreen.current, startUpsElemArrowRef, ideologyElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, isMobileScreen.current, startUpsElemArrowRef, ideologyElemArrowRef)}>
                         <span ref={ideologyElemArrowRef} className={`relative inline-block my-auto w-0 h-1/2 before:bg-blue-600 dark:before:bg-orange-600 ${styles.nav_ideology_arrow}`}></span>
                         <span className={`w-3/4`}>Ideology</span>
                     </li>
-                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, startUpsElemArrowRef, methodElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, startUpsElemArrowRef, methodElemArrowRef)}>
+                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, isMobileScreen.current, startUpsElemArrowRef, methodElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, isMobileScreen.current, startUpsElemArrowRef, methodElemArrowRef)}>
                         <span ref={methodElemArrowRef} className={`relative inline-block my-auto w-0 h-1/2 before:bg-blue-600 dark:before:bg-orange-600 ${styles.nav_method_arrow}`}></span>
                         <span className={`w-3/4`}>Method</span>
                     </li>
-                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, startUpsElemArrowRef, joinUsElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, startUpsElemArrowRef, joinUsElemArrowRef)}>
+                    <li className="flex h-fit text-sm lg:text-3xl lg:w-40 lg:ml-4" onMouseEnter={()=>navArrowAnimation(true, isMobileScreen.current, startUpsElemArrowRef, joinUsElemArrowRef)} onMouseLeave={()=>navArrowAnimation(false, isMobileScreen.current, startUpsElemArrowRef, joinUsElemArrowRef)}>
                         <span ref={joinUsElemArrowRef} className={`relative inline-block my-auto w-0 h-1/2 before:bg-blue-600 dark:before:bg-orange-600 ${styles.nav_join_us_arrow}`}></span>
                         <span className={`w-3/4`}>Join Us</span>
                     </li>
