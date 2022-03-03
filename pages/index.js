@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       
-      <div className="bg-gradient-to-b from-white to-slate-100 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-700 dark:text-gray-100">
+      <div className="bg-gradient-to-b from-white to-slate-100 dark:bg-gradient-to-b dark:from-black dark:to-slate-600 dark:text-gray-100">
         <div className="mx-2 md:mx-6 ">
         <Navbar/>
         <Header/>

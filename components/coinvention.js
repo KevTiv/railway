@@ -12,14 +12,14 @@ const CoInvention = () => {
   return (
     <>
         <section id="co-invention">
-            <div className="mt-8 border-t-2 border-gray-900 dark:border-gray-400 ">
+            <div className="mt-8 border-t-2 border-gray-900 dark:border-gray-600 ">
                 <h2 className="my-2 font-bold text-xs md:text-base">Earlier Co-Inventions</h2>
 
                 <div className={`w-full z-10 ${styles.horinzontal_scroll}`}>
                     <div className="top-0 left-0 flex w-fit">
                         <div id="oi" className="mx-4 min-w-[15.5rem] h-fit py-6 whitespace-normal">
                             <Image src={img1} alt='breafast' layout='responsive'/>
-                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 md:h-32">
+                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 dark:border-gray-500 md:h-32">
                                 <Image src={oi} alt='Oi logo' layout='responsive'/>
                                 <h2 className="mt-2 font-bold text-base leading-5 md:text-2xl md:leading-6 lg:text-3xl">Improving the everyday economy</h2>
                             </div>
@@ -29,7 +29,7 @@ const CoInvention = () => {
                         </div>
                         <div id="flyt" className="mx-4 min-w-[15.5rem] h-fit py-6 whitespace-normal">
                             <Image src={img2} alt='electrical power line' layout='responsive'/>
-                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 md:h-32">
+                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 dark:border-gray-500 md:h-32">
                                 <Image src={flyt} alt='Flyt logo' layout='responsive'/>
                                 <h2 className="mt-2 font-bold text-base leading-5 md:text-2xl md:leading-6 lg:text-3xl">Exposing the power utility industry</h2>
                             </div>
@@ -39,7 +39,7 @@ const CoInvention = () => {
                         </div>
                         <div id="circle" className="mx-4 min-w-[15.5rem] h-fit py-6 whitespace-normal">
                             <Image src={img3} alt='Truck driver seat view' layout='responsive'/>
-                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 md:h-32">
+                            <div className="flex flex-col justify-between min-h-[6rem] my-2 border-b-2 border-gray-200 dark:border-gray-500 md:h-32">
                                 <Image src={circle} alt='Circle logo' layout='responsive'/>
                                 <h2 className="mt-2 font-bold text-base leading-5 md:text-2xl md:leading-6 lg:text-3xl">Empowering professional drivers</h2>
                             </div>

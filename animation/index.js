@@ -19,37 +19,18 @@ export const navAnimation = (showNav, navElem)=>{
 };
 
 //animation of featured project arrows and intro arrows
-export const arrowAnimation = (isMouseOver, section)=>{
-    gsap.registerPlugin(CSSRulePlugin);
-    let arrowAfterElem,arrowBeforeElem,arrowContainer;
-
-    if(section === 'intro'){
-        arrowAfterElem = CSSRulePlugin.getRule(".Home_intro_arrows__g3KCF::after");
-        arrowBeforeElem = CSSRulePlugin.getRule(".Home_intro_arrows__g3KCF::before");
-    };
-    if(section === 'share'){
-        arrowAfterElem = CSSRulePlugin.getRule(".Home_featured_share_arrows__1F0QZ::after");
-        arrowBeforeElem = CSSRulePlugin.getRule(".Home_featured_share_arrows__1F0QZ::before");
-    };
-    if(section === 'spoton'){
-        arrowAfterElem = CSSRulePlugin.getRule(".Home_featured_spoton_arrows__J_kM8::after");
-        arrowBeforeElem = CSSRulePlugin.getRule(".Home_featured_spoton_arrows__J_kM8::before");
-    };
-    if(section === 'orbit'){
-        arrowAfterElem = CSSRulePlugin.getRule(".Home_featured_orbit_arrows__KwFqM::after");
-        arrowBeforeElem = CSSRulePlugin.getRule(".Home_featured_orbit_arrows__KwFqM::before");
-    };
-
+export const arrowAnimation = (isMouseOver, arrowContainerRef)=>{
+    
     const arrowsMoveRight = ()=>{
-        gsap.to([arrowAfterElem, arrowBeforeElem],{
-            left: '+=110',
+        gsap.to(arrowContainerRef.current,{
+            x: arrowContainerRef.current.clientWidth + (arrowContainerRef.current.offsetWidth * 0.5),
             duration: 0.25,
             ease: 'linear'
         })
     };
     const arrowsMoveLeft=()=>{
-        gsap.to([arrowBeforeElem, arrowAfterElem],{
-            left: '-=110',
+        gsap.to(arrowContainerRef.current,{
+            x: 0,
             duration: 0.25,
             ease: 'linear'
         });
@@ -69,21 +50,23 @@ export const navArrowAnimation =(isMouseOver, isMobileScreen, navStartupsElemRef
         isMouseOver?
             tl
                 .to(navStartupsElemRef.current,{
-                    width: 0,
+                    x: `-${ navStartupsElemRef.current.clientWidth * 0.25}`,
                 })
                 .to(navElemRef.current,{
-                    width: '16.666667%',
+                    x: 0,
+                    
                 },'-=0.6')
             :
             tl
                 .to(navElemRef.current,{
-                    width: 0,
+                    x: `-${ navElemRef.current.clientWidth * 0.25}`,
                 })
                 .to(navStartupsElemRef.current,{
-                    width: '16.666667%',
+                    x: 0
                 },'-=0.6')
     }
 };
+
 //Zoom in and out of featured project img 
 export const zoomFeaturedProject =(isMouseOver, elem)=>{
     isMouseOver ?
