@@ -5,7 +5,7 @@ https://railway-copy.vercel.app
 # DESCRIPTION
 Copy of the railway website found on awwwards within a set timeline.
 # GOAL
-Recreate the railway website layout and animation within 2 days.
+Try t0 recreate the railway website layout and animation within 2 days.
 # CHALLENGES
 - Create the railway website landing page within a short time period.
 - Create the railway website landing page animations within a short time period.
